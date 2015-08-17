@@ -74,7 +74,7 @@ const styles = {
   width: true,
 };
 
-export function getStyle(props) {
+export function extract(props) {
   const style = {};
   const attrs = {};
 
@@ -93,5 +93,5 @@ export function getStyle(props) {
   const {transform, attributes} = getTransform(attrs);
   transform && (style.transform = transform);
   attributes.style = style;
-  return attributes;;
+  return attributes;
 }

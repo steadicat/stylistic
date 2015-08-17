@@ -5,9 +5,9 @@ A small library to extract style and CSS transform declarations from a React pro
 For example:
 
 ```js
-import {getStyle} from 'stylistic';
+import {extract} from 'stylistic';
 
-getStyle({
+extract({
   id: 'myElement',
   onClick: onClickHandler,
   marginTop: 12,
@@ -17,10 +17,8 @@ getStyle({
 // Returns:
 
 {
-  attributes: {
-    id: 'myElement',
-    onClick: onClickHandler,
-  },
+  id: 'myElement',
+  onClick: onClickHandler,
   style: {
     marginTop: 12,
     transform: 'translate(0, 24px)',
