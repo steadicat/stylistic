@@ -1,6 +1,6 @@
 # Stylistic
 
-A small library to extract style and CSS transform declarations from a React props object into a style object, with some helpful conversions along the way.
+A small library to extract style and CSS transform declarations from a React props object into a style object, with some helpful conversions along the way. See [stylistic-elements](https://github.com/steadicat/stylistic-elements) for the higher-level application of this.
 
 For example:
 
