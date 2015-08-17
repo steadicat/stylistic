@@ -1,5 +1,5 @@
 import {getTransform} from './transforms';
-import {rgba, url, px} from './functions';
+import {rgba, url} from './functions';
 
 function color(c) {
   if (Array.isArray(c)) {
@@ -7,6 +7,10 @@ function color(c) {
   } else {
     return c;
   }
+}
+
+function px(n) {
+  return (n || 0) + 'px';
 }
 
 const styles = {

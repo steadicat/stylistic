@@ -1,6 +1,6 @@
 /* Argument Types */
 
-function px(n) {
+export function px(n) {
   return (n || 0) + 'px';
 }
 

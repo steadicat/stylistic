@@ -1,6 +1,6 @@
 {
   "name": "stylistic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small library to convert React props into a style object.",
   "author": "Stefano J. Attardi (http://github.com/steadicat)",
   "main": "lib/index.js",
