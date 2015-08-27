@@ -10,6 +10,7 @@ function color(c) {
 }
 
 function px(n) {
+  if (typeof n === 'string') return n;
   return (n || 0) + 'px';
 }
 
