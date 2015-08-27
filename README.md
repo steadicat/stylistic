@@ -75,6 +75,10 @@ extract({
  - minWidth
  - opacity
  - outline
+ - outlineColor
+ - outlineOffset
+ - outlineStyle
+ - outlineWidth
  - overflow
  - paddingBottom
  - paddingLeft
