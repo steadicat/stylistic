@@ -26,85 +26,26 @@ extract({
 }
 ```
 
-**Note**: this is a work-in-progress. CSS properties will be added as needed or as requested. Support for browser prefixing is coming.
+**Note**: this is a work-in-progress. Support for browser prefixing is coming.
 
 ## Supported CSS properties
 
- - backgroundColor (`[r, g, b, a]` arrays supported)
- - backgroundImage (just use path/URL directly, no need to wrap it in `url()`)
- - backgroundPosition
- - backgroundRepeat
- - backgroundSize
- - borderBottomColor (`[r, g, b, a]` arrays supported)
- - borderBottomStyle
- - borderBottomWidth
- - borderColor (`[r, g, b, a]` arrays supported)
- - borderLeftColor (`[r, g, b, a]` arrays supported)
- - borderLeftStyle
- - borderLeftWidth
- - borderRadius
- - borderRightColor (`[r, g, b, a]` arrays supported)
- - borderRightStyle
- - borderRightWidth
- - borderStyle
- - borderTopColor (`[r, g, b, a]` arrays supported)
- - borderTopStyle
- - borderTopWidth
- - borderWidth
- - bottom
- - boxSizing
- - color (`[r, g, b, a]` arrays supported)
- - cursor
- - display
- - float
- - fontFamily
- - fontSize
- - fontStyle
- - fontWeight
- - height
- - left
- - letterSpacing (assumes pixels, no need to add `px`)
- - lineHeight (assumes pixels, no need to add `px`)
- - marginBottom
- - marginLeft
- - marginRight
- - marginTop
- - maxHeight
- - maxWidth
- - minHeight
- - minWidth
- - opacity
- - outline
- - outlineColor
- - outlineOffset
- - outlineStyle
- - outlineWidth
- - overflow
- - paddingBottom
- - paddingLeft
- - paddingRight
- - paddingTop
- - pointerEvents
- - position
- - right
- - textAlign
- - textDecoration
- - textOverflow
- - textRendering
- - top
- - verticalAlign
- - WebkitFontSmoothing
- - whiteSpace
- - width
+All CSS properties should be supported. If I missed any, file a bug.
+
+A few properties have special behaviors:
+
+ - Colors can be provided as `[r, g, b, a]` arrays as well as standard CSS strings (this can be useful for animating).
+ - `backgroundImage` takes a path/URL directly, no need to wrap it in `url()`.
+ - `letterSpacing` and `lineHeight` assume pixels if you supply a number, no need to add `px`.
 
 ## Supported transform properties
 
- - translateX
- - translateY
- - translateZ
- - scaleX
- - scaleY
- - rotateX
- - rotateY
- - rotateZ
+ - `translateX`
+ - `translateY`
+ - `translateZ`
+ - `scaleX`
+ - `scaleY`
+ - `rotateX`
+ - `rotateY`
+ - `rotateZ`
 
