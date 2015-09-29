@@ -1,6 +1,7 @@
 /* Argument Types */
 
 function px(n) {
+  if (/%$/.test(n)) return n;
   return (n || 0) + 'px';
 }
 
