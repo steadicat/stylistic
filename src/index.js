@@ -2,7 +2,7 @@ import {getTransform} from './transforms';
 import styles from './styles';
 
 export function extract(props) {
-  const style = {};
+  const style = props.style;
   const attrs = {};
 
   Object.keys(props).forEach(function(prop) {
