@@ -13,7 +13,7 @@ function px(n) {
   return (n || 0) + 'px';
 }
 
-const styles = {
+export const styles = {
   alignContent: true,
   alignItems: true,
   alignSelf: true,
@@ -273,4 +273,22 @@ const styles = {
   zIndex: true,
 };
 
-export default styles;
+export const shorthand = {
+  background: true,
+  font: true,
+  margin: true,
+  border: true,
+  borderTop: true,
+  borderRight: true,
+  borderBottom: true,
+  borderLeft: true,
+  borderWidth: true,
+  borderColor: true,
+  borderStyle: true,
+  transition: true,
+  animation: true,
+  transform: true,
+  padding: true,
+  listStyle: true,
+  borderRadius: true,
+};
