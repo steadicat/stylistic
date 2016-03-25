@@ -4,7 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   entry: 'src/index.js',
-  moduleName: 'rollup',
+  moduleName: 'Stylistic',
   globals: {
     react: 'React',
   },
