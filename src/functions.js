@@ -17,7 +17,7 @@ function colorComponent(x) {
   return x < 0 ? 0 : x > 255 ? 255 : Math.round(x);
 }
 
-function alpha(x=1) {
+function alpha(x = 1) {
   return x < 0 ? 0 : x > 1 ? 1 : x;
 }
 

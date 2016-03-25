@@ -99,7 +99,7 @@ export const styles = {
   clear: true,
   clip: true,
   clipPath: true,
-  color: color,
+  color,
   columnCount: true,
   columnFill: true,
   columnGap: true,

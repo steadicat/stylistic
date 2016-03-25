@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "description": "A small library to convert React props into a style object.",
   "author": "Stefano J. Attardi (http://github.com/steadicat)",
-  "main": "lib/index.js",
-  "jsnext:main": "src/index.js",
+  "main": "index.js",
+  "jsnext:main": "index.es6.js",
   "scripts": {
     "lint": "eslint src",
-    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "build": "./node_modules/.bin/rollup -c -f umd -o index.js && ./node_modules/.bin/rollup -c -f es6 -o index.es6.js",
     "prepublish": "npm run build"
   },
   "homepage": "https://github.com/steadicat/stylistic",
@@ -26,7 +26,18 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel": "5.8.21"
+    "babel-eslint": ">6.0.0-beta",
+    "babel-preset-es2015-rollup": "1.1.x",
+    "babel-preset-react": "6.5.x",
+    "babel-preset-stage-0": "6.5.x",
+    "eslint": "2.4.x",
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "4.2.x",
+    "raf": "3.2.x",
+    "rollup": "0.25.x",
+    "rollup-plugin-babel": "2.4.x",
+    "rollup-plugin-commonjs": "2.2.x",
+    "rollup-plugin-node-resolve": "1.5.x"
   },
   "license": "MIT"
 }

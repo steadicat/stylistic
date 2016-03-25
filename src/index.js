@@ -28,6 +28,7 @@ export function extract(props) {
           for (let i = 0; i < keys.length; i++) {
             if (prop === keys[i]) continue;
             if (keys[i].substring(0, prop.length) === prop) {
+              /* eslint no-console: 0 */
               console.warn(`You are using shorthand property ${prop} and regular property ${keys[i]} on the same element. This is bad practice, and may cause unintended consequences when the properties are reordered.`);
               break;
             }
