@@ -26,12 +26,12 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": ">6.0.0-beta",
-    "babel-preset-es2015-rollup": "1.1.x",
-    "eslint": "2.4.x",
-    "eslint-plugin-babel": "3.1.x",
-    "rollup": "0.25.x",
-    "rollup-plugin-babel": "2.4.x"
+    "babel-eslint": "6.0.0",
+    "babel-preset-es2015-rollup": "1.1.1",
+    "eslint": "2.5.3",
+    "eslint-plugin-babel": "3.1.0",
+    "rollup": "0.25.7",
+    "rollup-plugin-babel": "2.4.0"
   },
   "license": "MIT"
 }
