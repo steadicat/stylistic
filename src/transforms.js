@@ -1,4 +1,4 @@
-import {translate, translate3d, rotate, rotate3d, scale} from './functions';
+import {translate, translate3d, rotate, rotateZ, scale} from './functions';
 
 const properties = {
   translateX: true,
@@ -31,10 +31,11 @@ export function getTransformFunction({
   if (sx !== undefined || sy !== undefined) {
     transforms.push(scale(sx, sy));
   }
-  if (rz !== undefined) {
-    transforms.push(rotate3d(rx, ry, rz));
-  } else if (rx !== undefined || ry !== undefined) {
+  if (rx !== undefined || ry !== undefined) {
     transforms.push(rotate(rx, ry));
+  }
+  if (rz !== undefined) {
+    transforms.push(rotateZ(rz));
   }
   return transforms.join(' ');
 }
