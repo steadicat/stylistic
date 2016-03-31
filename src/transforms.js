@@ -1,4 +1,4 @@
-import {translate, translate3d, scale} from './functions';
+import {translate, translate3d, rotate, rotate3d, scale} from './functions';
 
 const properties = {
   translateX: true,
@@ -32,9 +32,9 @@ export function getTransformFunction({
     transforms.push(scale(sx, sy));
   }
   if (rz !== undefined) {
-    transforms.push(translate3d(rx, ry, rz));
+    transforms.push(rotate3d(rx, ry, rz));
   } else if (rx !== undefined || ry !== undefined) {
-    transforms.push(translate(rx, ry));
+    transforms.push(rotate(rx, ry));
   }
   return transforms.join(' ');
 }
